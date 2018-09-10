@@ -1,4 +1,5 @@
 ﻿using System;
+using DPWorkout.Creational.AbstractFactory;
 using DPWorkout.Creational.Factory;
 
 namespace DPWorkout
@@ -7,7 +8,8 @@ namespace DPWorkout
     {
         static void Main(string[] args)
         {
-            new FactoryClient().GetInformationAboutCountry();
+            //new FactoryClient().GetInformationAboutCountry();
+            new AbstractFactoryClient().RunSimpleOperation();
 
             Console.ReadLine();
         }
