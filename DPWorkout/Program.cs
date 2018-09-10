@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DPWorkout.Creational.Factory;
 
 namespace DPWorkout
 {
@@ -10,6 +7,9 @@ namespace DPWorkout
     {
         static void Main(string[] args)
         {
+            new FactoryClient().GetInformationAboutCountry();
+
+            Console.ReadLine();
         }
     }
 }

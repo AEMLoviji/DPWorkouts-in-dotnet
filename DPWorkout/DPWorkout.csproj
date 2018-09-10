@@ -42,6 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\Factory\BelarusFactory.cs" />
+    <Compile Include="Creational\Factory\AzerbaijanFactory.cs" />
+    <Compile Include="Creational\Factory\CountryFactory.cs" />
+    <Compile Include="Creational\Factory\FactoryClient.cs" />
+    <Compile Include="Creational\Factory\Countries\Azerbaijan.cs" />
+    <Compile Include="Creational\Factory\Countries\Belarus.cs" />
+    <Compile Include="Creational\Factory\Countries\ICountry.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -50,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Creational\AbstractFactory\Products\" />
-    <Folder Include="Creational\Factory\Products\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
