@@ -59,6 +59,9 @@
     <Compile Include="Creational\Factory\Countries\Azerbaijan.cs" />
     <Compile Include="Creational\Factory\Countries\Belarus.cs" />
     <Compile Include="Creational\Factory\Countries\ICountry.cs" />
+    <Compile Include="Creational\Singleton\Clock.cs" />
+    <Compile Include="Creational\Singleton\SingletonClient.cs" />
+    <Compile Include="IPatternClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

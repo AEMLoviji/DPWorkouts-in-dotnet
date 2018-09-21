@@ -2,9 +2,9 @@
 
 namespace DPWorkout.Creational.Factory
 {
-    class FactoryClient
+    public class FactoryClient : IPatternClient
     {
-        public void GetInformationAboutCountry()
+        public void Run()
         {
             Console.WriteLine($"{nameof(FactoryClient)} ran with {nameof(AzerbaijanFactory)}");
             GetCountryDataInternal(new AzerbaijanFactory());
@@ -13,7 +13,6 @@ namespace DPWorkout.Creational.Factory
 
             Console.WriteLine($"{nameof(FactoryClient)} ran with {nameof(BelarusFactory)}");
             GetCountryDataInternal(new BelarusFactory());
-
         }
 
         private void GetCountryDataInternal(CountryFactory country)
