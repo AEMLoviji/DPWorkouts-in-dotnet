@@ -1,6 +1,4 @@
 ﻿using System;
-using DPWorkout.Creational.AbstractFactory;
-using DPWorkout.Creational.Factory;
 using DPWorkout.Creational.Singleton;
 
 namespace DPWorkout

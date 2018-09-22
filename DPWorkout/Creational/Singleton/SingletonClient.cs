@@ -2,9 +2,11 @@
 {
     public class SingletonClient : IPatternClient
     {
+        private ProcessHandler _processHandler = ProcessHandler.Instance;
+
         public void Run()
         {
-            Clock.Instance.ShowTime();
+            _processHandler.ShowProcessList();
         }
     }
 }
