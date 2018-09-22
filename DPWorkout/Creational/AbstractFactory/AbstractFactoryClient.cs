@@ -2,17 +2,17 @@
 
 namespace DPWorkout.Creational.AbstractFactory
 {
-    class AbstractFactoryClient : IPatternClient
+    public class AbstractFactoryClient : IPatternClient
     {
         public void Run()
         {
-            Console.WriteLine($"{nameof(AbstractFactoryClient)} ran with {nameof(FactoryTeam1Tools)}");
-            InvokeMethodsInternal(new FactoryTeam1Tools());
+            Console.WriteLine($"{nameof(AbstractFactoryClient)} ran with {nameof(Team1ToolsFactory)}");
+            InvokeMethodsInternal(new Team1ToolsFactory());
 
             Console.WriteLine("\n *** Switching *** \n");
 
-            Console.WriteLine($"{nameof(AbstractFactoryClient)} ran with {nameof(FactoryTeam2Tools)}");
-            InvokeMethodsInternal(new FactoryTeam2Tools());
+            Console.WriteLine($"{nameof(AbstractFactoryClient)} ran with {nameof(Team2ToolsFactory)}");
+            InvokeMethodsInternal(new Team2ToolsFactory());
 
         }
 

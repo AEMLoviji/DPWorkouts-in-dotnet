@@ -2,16 +2,21 @@
 
 namespace DPWorkout.Creational.AbstractFactory
 {
-    class FactoryTeam1Tools : IFactory
+    /// <summary>
+    ///  Factory implementation for Team 2 tools
+    /// </summary>
+    public class Team2ToolsFactory : IFactory
     {
+        /// <inheritdoc />
         public ICompiledLanguage GetCompiler()
         {
-            return new Csharp();
+            return new Java();
         }
 
+        /// <inheritdoc />
         public IInterpretedLanguage GetInterpreter()
         {
-            return new JavaScript();
+            return new Ruby();
         }
     }
 }

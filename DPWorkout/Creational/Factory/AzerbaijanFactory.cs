@@ -2,7 +2,10 @@
 
 namespace DPWorkout.Creational.Factory
 {
-    class AzerbaijanFactory : CountryFactory
+    /// <summary>
+    /// Azerbaijan factory implementation
+    /// </summary>
+    public class AzerbaijanFactory : CountryFactory
     {
         protected override ICountry CreateCountry()
         {

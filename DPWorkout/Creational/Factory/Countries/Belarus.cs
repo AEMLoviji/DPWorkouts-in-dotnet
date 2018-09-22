@@ -1,15 +1,20 @@
 ﻿namespace DPWorkout.Creational.Factory.Countries
 {
-    class Belarus : ICountry
+    /// <summary>
+    /// Belarus country implementation
+    /// </summary>
+    public class Belarus : ICountry
     {
-        const string Capital = "Minsk";
-        const int Population = 9449074;
+        private const string Capital = "Minsk";
+        private const int Population = 9449074;
 
+        /// <inheritdoc />
         public string GetCapital()
         {
             return $"Capital is: {Capital}";
         }
 
+        /// <inheritdoc />
         public string GetPopulation()
         {
             return $"Population is {Population:N0}";

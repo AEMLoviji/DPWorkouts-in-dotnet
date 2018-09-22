@@ -43,8 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Creational\AbstractFactory\AbstractFactoryClient.cs" />
-    <Compile Include="Creational\AbstractFactory\FactoryTeam1Tools.cs" />
-    <Compile Include="Creational\AbstractFactory\FactoryTeam2Tools.cs" />
+    <Compile Include="Creational\AbstractFactory\Team1ToolsFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Team2ToolsFactory.cs" />
     <Compile Include="Creational\AbstractFactory\IFactory.cs" />
     <Compile Include="Creational\AbstractFactory\Languages\Csharp.cs" />
     <Compile Include="Creational\AbstractFactory\Languages\Java.cs" />
