@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DPWorkout
+﻿namespace DPWorkout
 {
+    /// <summary>
+    /// Defines an interface to call desired pattern flow
+    /// </summary>
     public interface IPatternClient
     {
+        /// <summary>
+        /// Run given pattern flow
+        /// </summary>
         void Run();
     }
 }
