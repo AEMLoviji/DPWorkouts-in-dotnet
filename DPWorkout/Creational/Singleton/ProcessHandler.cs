@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DPWorkout.Creational.Singleton
 {
@@ -47,7 +46,7 @@ namespace DPWorkout.Creational.Singleton
         }
 
         /// <summary>
-        /// Shows current clock
+        /// Shows all process
         /// </summary>
         public void ShowProcessList()
         {
