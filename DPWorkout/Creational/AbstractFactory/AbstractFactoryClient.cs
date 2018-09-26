@@ -13,7 +13,6 @@ namespace DPWorkout.Creational.AbstractFactory
 
             Console.WriteLine($"{nameof(AbstractFactoryClient)} ran with {nameof(Team2ToolsFactory)}");
             InvokeMethodsInternal(new Team2ToolsFactory());
-
         }
 
         private void InvokeMethodsInternal(IFactory factory)
