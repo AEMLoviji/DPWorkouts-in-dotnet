@@ -52,6 +52,12 @@
     <Compile Include="Creational\AbstractFactory\Languages\JavaScript.cs" />
     <Compile Include="Creational\AbstractFactory\Languages\IInterpretedLanguage.cs" />
     <Compile Include="Creational\AbstractFactory\Languages\ICompiledLanguage.cs" />
+    <Compile Include="Creational\Builder\BuilderClient.cs" />
+    <Compile Include="Creational\Builder\SkilletSpinachLasagnaBuilder.cs" />
+    <Compile Include="Creational\Builder\Cooker.cs" />
+    <Compile Include="Creational\Builder\BreadedParmesanRanchChickenBuilder.cs" />
+    <Compile Include="Creational\Builder\IMealBuilder.cs" />
+    <Compile Include="Creational\Builder\Meal.cs" />
     <Compile Include="Creational\Factory\BelarusFactory.cs" />
     <Compile Include="Creational\Factory\AzerbaijanFactory.cs" />
     <Compile Include="Creational\Factory\CountryFactory.cs" />

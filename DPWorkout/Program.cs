@@ -3,6 +3,7 @@ using DPWorkout.Creational.Factory;
 using DPWorkout.Creational.AbstractFactory;
 using DPWorkout.Creational.Singleton;
 using DPWorkout.Creational.Prototype;
+using DPWorkout.Creational.Builder;
 
 namespace DPWorkout
 {
@@ -15,7 +16,8 @@ namespace DPWorkout
             //patternClient = new AbstractFactoryClient();
             //patternClient = new FactoryClient();
             //patternClient = new SingletonClient();
-            patternClient = new PrototypeClient();
+            //patternClient = new PrototypeClient();
+            patternClient = new BuilderClient();
             patternClient.Run();
 
             Console.ReadLine();
