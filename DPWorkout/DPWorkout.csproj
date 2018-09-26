@@ -73,6 +73,11 @@
     <Compile Include="IPatternClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\ExternalServiceAdapter.cs" />
+    <Compile Include="Structural\Adapter\IDateService.cs" />
+    <Compile Include="Structural\Adapter\ExternalService.cs" />
+    <Compile Include="Structural\Adapter\InternalService.cs" />
+    <Compile Include="Structural\Adapter\AdapterClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
