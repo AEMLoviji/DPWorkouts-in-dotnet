@@ -5,6 +5,7 @@ using DPWorkout.Creational.Singleton;
 using DPWorkout.Creational.Prototype;
 using DPWorkout.Creational.Builder;
 using DPWorkout.Creational.Structural;
+using DPWorkout.Structural.Facade;
 
 namespace DPWorkout
 {
@@ -23,7 +24,8 @@ namespace DPWorkout
             #endregion
 
             #region Structural Pattern Clients
-            patternClient = new AdapterClient();
+            //patternClient = new AdapterClient();
+            patternClient = new FacadeClient();
             patternClient.Run();
             #endregion
 

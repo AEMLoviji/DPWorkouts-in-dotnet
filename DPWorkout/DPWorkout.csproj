@@ -78,6 +78,12 @@
     <Compile Include="Structural\Adapter\ExternalService.cs" />
     <Compile Include="Structural\Adapter\InternalService.cs" />
     <Compile Include="Structural\Adapter\AdapterClient.cs" />
+    <Compile Include="Structural\Facade\AuthUserDecoder.cs" />
+    <Compile Include="Structural\Facade\CloudInfoSystem.cs" />
+    <Compile Include="Structural\Facade\FacadeClient.cs" />
+    <Compile Include="Structural\Facade\Models\AuthResult.cs" />
+    <Compile Include="Structural\Facade\Models\User.cs" />
+    <Compile Include="Structural\Facade\UserBrowserFacade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
