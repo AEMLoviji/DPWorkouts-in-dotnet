@@ -84,6 +84,10 @@
     <Compile Include="Structural\Facade\Models\AuthResult.cs" />
     <Compile Include="Structural\Facade\Models\User.cs" />
     <Compile Include="Structural\Facade\UserBrowserFacade.cs" />
+    <Compile Include="Structural\Proxy\ProxyClient.cs" />
+    <Compile Include="Structural\Proxy\TranslatorProxy.cs" />
+    <Compile Include="Structural\Proxy\TranslatorApi\GoogleTranslate.cs" />
+    <Compile Include="Structural\Proxy\TranslatorApi\ITranslator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
