@@ -78,6 +78,11 @@
     <Compile Include="Structural\Adapter\ExternalService.cs" />
     <Compile Include="Structural\Adapter\InternalService.cs" />
     <Compile Include="Structural\Adapter\AdapterClient.cs" />
+    <Compile Include="Structural\Decorator\AdministratorComputerDecorator.cs" />
+    <Compile Include="Structural\Decorator\ComputerDecorator.cs" />
+    <Compile Include="Structural\Decorator\Models\Pc.cs" />
+    <Compile Include="Structural\Decorator\Models\IComputer.cs" />
+    <Compile Include="Structural\Decorator\DecoratorClient.cs" />
     <Compile Include="Structural\Facade\AuthUserDecoder.cs" />
     <Compile Include="Structural\Facade\CloudInfoSystem.cs" />
     <Compile Include="Structural\Facade\FacadeClient.cs" />
