@@ -27,7 +27,8 @@ namespace DPWorkout
             #region Structural Pattern Clients
             //patternClient = new AdapterClient();
             //patternClient = new FacadeClient();
-            patternClient = new ProxyClient();
+            //patternClient = new ProxyClient();
+            patternClient = new DecoratorClient();
             patternClient.Run();
             #endregion
 
