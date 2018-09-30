@@ -7,6 +7,7 @@ using DPWorkout.Creational.Builder;
 using DPWorkout.Creational.Structural;
 using DPWorkout.Structural.Facade;
 using DPWorkout.Structural.Proxy;
+using DPWorkout.Structural.Composite;
 
 namespace DPWorkout
 {
@@ -28,7 +29,8 @@ namespace DPWorkout
             //patternClient = new AdapterClient();
             //patternClient = new FacadeClient();
             //patternClient = new ProxyClient();
-            patternClient = new DecoratorClient();
+            //patternClient = new DecoratorClient();
+            patternClient = new CompositeClient();
             patternClient.Run();
             #endregion
 
