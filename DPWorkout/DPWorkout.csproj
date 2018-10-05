@@ -93,6 +93,10 @@
     <Compile Include="Structural\Facade\Models\AuthResult.cs" />
     <Compile Include="Structural\Facade\Models\User.cs" />
     <Compile Include="Structural\Facade\UserBrowserFacade.cs" />
+    <Compile Include="Structural\Flyweight\CategoryFactory.cs" />
+    <Compile Include="Structural\Flyweight\FlyweightClient.cs" />
+    <Compile Include="Structural\Flyweight\Service.cs" />
+    <Compile Include="Structural\Flyweight\Category.cs" />
     <Compile Include="Structural\Proxy\ProxyClient.cs" />
     <Compile Include="Structural\Proxy\TranslatorProxy.cs" />
     <Compile Include="Structural\Proxy\TranslatorApi\GoogleTranslate.cs" />
