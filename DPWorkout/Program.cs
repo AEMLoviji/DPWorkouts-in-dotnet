@@ -30,7 +30,8 @@ namespace DPWorkout
             //patternClient = new FacadeClient();
             //patternClient = new ProxyClient();
             //patternClient = new DecoratorClient();
-            patternClient = new CompositeClient();
+            //patternClient = new CompositeClient();
+            patternClient = new FlyweightClient();
             patternClient.Run();
             #endregion
 
