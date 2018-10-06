@@ -78,6 +78,11 @@
     <Compile Include="Structural\Adapter\ExternalService.cs" />
     <Compile Include="Structural\Adapter\InternalService.cs" />
     <Compile Include="Structural\Adapter\AdapterClient.cs" />
+    <Compile Include="Structural\Bridge\OracleDb.cs" />
+    <Compile Include="Structural\Bridge\MsSqlDb.cs" />
+    <Compile Include="Structural\Bridge\IDatabase.cs" />
+    <Compile Include="Structural\Bridge\BridgePattern.cs" />
+    <Compile Include="Structural\Bridge\UserBL.cs" />
     <Compile Include="Structural\Composite\CompositeClient.cs" />
     <Compile Include="Structural\Composite\Folder.cs" />
     <Compile Include="Structural\Composite\File.cs" />
