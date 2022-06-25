@@ -1,115 +1,76 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{677E7E59-DCAA-43DD-94DC-962A57E9C95A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DPWorkout</RootNamespace>
-    <AssemblyName>DPWorkout</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Creational\AbstractFactory\AbstractFactoryClient.cs" />
-    <Compile Include="Creational\AbstractFactory\Team1ToolsFactory.cs" />
-    <Compile Include="Creational\AbstractFactory\Team2ToolsFactory.cs" />
-    <Compile Include="Creational\AbstractFactory\IFactory.cs" />
-    <Compile Include="Creational\AbstractFactory\Languages\Csharp.cs" />
-    <Compile Include="Creational\AbstractFactory\Languages\Java.cs" />
-    <Compile Include="Creational\AbstractFactory\Languages\Ruby.cs" />
-    <Compile Include="Creational\AbstractFactory\Languages\JavaScript.cs" />
-    <Compile Include="Creational\AbstractFactory\Languages\IInterpretedLanguage.cs" />
-    <Compile Include="Creational\AbstractFactory\Languages\ICompiledLanguage.cs" />
-    <Compile Include="Creational\Builder\BuilderClient.cs" />
-    <Compile Include="Creational\Builder\SkilletSpinachLasagnaBuilder.cs" />
-    <Compile Include="Creational\Builder\Cooker.cs" />
-    <Compile Include="Creational\Builder\BreadedParmesanRanchChickenBuilder.cs" />
-    <Compile Include="Creational\Builder\IMealBuilder.cs" />
-    <Compile Include="Creational\Builder\Meal.cs" />
-    <Compile Include="Creational\Factory\BelarusFactory.cs" />
-    <Compile Include="Creational\Factory\AzerbaijanFactory.cs" />
-    <Compile Include="Creational\Factory\CountryFactory.cs" />
-    <Compile Include="Creational\Factory\FactoryClient.cs" />
-    <Compile Include="Creational\Factory\Countries\Azerbaijan.cs" />
-    <Compile Include="Creational\Factory\Countries\Belarus.cs" />
-    <Compile Include="Creational\Factory\Countries\ICountry.cs" />
-    <Compile Include="Creational\Prototype\ComputerPrototype.cs" />
-    <Compile Include="Creational\Prototype\Computer.cs" />
-    <Compile Include="Creational\Prototype\PrototypeClient.cs" />
-    <Compile Include="Creational\Singleton\ProcessHandler.cs" />
-    <Compile Include="Creational\Singleton\SingletonClient.cs" />
-    <Compile Include="IPatternClient.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Structural\Adapter\ExternalServiceAdapter.cs" />
-    <Compile Include="Structural\Adapter\IDateService.cs" />
-    <Compile Include="Structural\Adapter\ExternalService.cs" />
-    <Compile Include="Structural\Adapter\InternalService.cs" />
-    <Compile Include="Structural\Adapter\AdapterClient.cs" />
-    <Compile Include="Structural\Bridge\OracleDb.cs" />
-    <Compile Include="Structural\Bridge\MsSqlDb.cs" />
-    <Compile Include="Structural\Bridge\IDatabase.cs" />
-    <Compile Include="Structural\Bridge\BridgePattern.cs" />
-    <Compile Include="Structural\Bridge\UserBL.cs" />
-    <Compile Include="Structural\Composite\CompositeClient.cs" />
-    <Compile Include="Structural\Composite\Folder.cs" />
-    <Compile Include="Structural\Composite\File.cs" />
-    <Compile Include="Structural\Composite\FileStructure.cs" />
-    <Compile Include="Structural\Decorator\AdministratorComputerDecorator.cs" />
-    <Compile Include="Structural\Decorator\ComputerDecorator.cs" />
-    <Compile Include="Structural\Decorator\Models\Pc.cs" />
-    <Compile Include="Structural\Decorator\Models\IComputer.cs" />
-    <Compile Include="Structural\Decorator\DecoratorClient.cs" />
-    <Compile Include="Structural\Facade\AuthUserDecoder.cs" />
-    <Compile Include="Structural\Facade\CloudInfoSystem.cs" />
-    <Compile Include="Structural\Facade\FacadeClient.cs" />
-    <Compile Include="Structural\Facade\Models\AuthResult.cs" />
-    <Compile Include="Structural\Facade\Models\User.cs" />
-    <Compile Include="Structural\Facade\UserBrowserFacade.cs" />
-    <Compile Include="Structural\Flyweight\CategoryFactory.cs" />
-    <Compile Include="Structural\Flyweight\FlyweightClient.cs" />
-    <Compile Include="Structural\Flyweight\Service.cs" />
-    <Compile Include="Structural\Flyweight\Category.cs" />
-    <Compile Include="Structural\Proxy\ProxyClient.cs" />
-    <Compile Include="Structural\Proxy\TranslatorProxy.cs" />
-    <Compile Include="Structural\Proxy\TranslatorApi\GoogleTranslate.cs" />
-    <Compile Include="Structural\Proxy\TranslatorApi\ITranslator.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<None Include="Creational\AbstractFactory\AbstractFactoryClient.cs" />
+		<None Include="Creational\AbstractFactory\Team1ToolsFactory.cs" />
+		<None Include="Creational\AbstractFactory\Team2ToolsFactory.cs" />
+		<None Include="Creational\AbstractFactory\IFactory.cs" />
+		<None Include="Creational\AbstractFactory\Languages\Csharp.cs" />
+		<None Include="Creational\AbstractFactory\Languages\Java.cs" />
+		<None Include="Creational\AbstractFactory\Languages\Ruby.cs" />
+		<None Include="Creational\AbstractFactory\Languages\JavaScript.cs" />
+		<None Include="Creational\AbstractFactory\Languages\IInterpretedLanguage.cs" />
+		<None Include="Creational\AbstractFactory\Languages\ICompiledLanguage.cs" />
+		<None Include="Creational\Builder\BuilderClient.cs" />
+		<None Include="Creational\Builder\SkilletSpinachLasagnaBuilder.cs" />
+		<None Include="Creational\Builder\Cooker.cs" />
+		<None Include="Creational\Builder\BreadedParmesanRanchChickenBuilder.cs" />
+		<None Include="Creational\Builder\IMealBuilder.cs" />
+		<None Include="Creational\Builder\Meal.cs" />
+		<None Include="Creational\Factory\Example1\BelarusFactory.cs" />
+		<None Include="Creational\Factory\Example1\AzerbaijanFactory.cs" />
+		<None Include="Creational\Factory\Example1\CountryFactory.cs" />
+		<None Include="Creational\Factory\Example1\FactoryClient.cs" />
+		<None Include="Creational\Factory\Example1\Countries\Azerbaijan.cs" />
+		<None Include="Creational\Factory\Example1\Countries\Belarus.cs" />
+		<None Include="Creational\Factory\Example1\Countries\ICountry.cs" />
+		<None Include="Creational\Prototype\ComputerPrototype.cs" />
+		<None Include="Creational\Prototype\Computer.cs" />
+		<None Include="Creational\Prototype\PrototypeClient.cs" />
+		<None Include="Creational\Singleton\ProcessHandler.cs" />
+		<None Include="Creational\Singleton\SingletonClient.cs" />
+		<None Include="IPatternClient.cs" />
+		<None Include="Program.cs" />
+		<None Include="Structural\Adapter\ExternalServiceAdapter.cs" />
+		<None Include="Structural\Adapter\IDateService.cs" />
+		<None Include="Structural\Adapter\ExternalService.cs" />
+		<None Include="Structural\Adapter\InternalService.cs" />
+		<None Include="Structural\Adapter\AdapterClient.cs" />
+		<None Include="Structural\Bridge\OracleDb.cs" />
+		<None Include="Structural\Bridge\MsSqlDb.cs" />
+		<None Include="Structural\Bridge\IDatabase.cs" />
+		<None Include="Structural\Bridge\BridgePattern.cs" />
+		<None Include="Structural\Bridge\UserBL.cs" />
+		<None Include="Structural\Composite\CompositeClient.cs" />
+		<None Include="Structural\Composite\Folder.cs" />
+		<None Include="Structural\Composite\File.cs" />
+		<None Include="Structural\Composite\FileStructure.cs" />
+		<None Include="Structural\Decorator\AdministratorComputerDecorator.cs" />
+		<None Include="Structural\Decorator\ComputerDecorator.cs" />
+		<None Include="Structural\Decorator\Models\Pc.cs" />
+		<None Include="Structural\Decorator\Models\IComputer.cs" />
+		<None Include="Structural\Decorator\DecoratorClient.cs" />
+		<None Include="Structural\Facade\AuthUserDecoder.cs" />
+		<None Include="Structural\Facade\CloudInfoSystem.cs" />
+		<None Include="Structural\Facade\FacadeClient.cs" />
+		<None Include="Structural\Facade\Models\AuthResult.cs" />
+		<None Include="Structural\Facade\Models\User.cs" />
+		<None Include="Structural\Facade\UserBrowserFacade.cs" />
+		<None Include="Structural\Flyweight\CategoryFactory.cs" />
+		<None Include="Structural\Flyweight\FlyweightClient.cs" />
+		<None Include="Structural\Flyweight\Service.cs" />
+		<None Include="Structural\Flyweight\Category.cs" />
+		<None Include="Structural\Proxy\ProxyClient.cs" />
+		<None Include="Structural\Proxy\TranslatorProxy.cs" />
+		<None Include="Structural\Proxy\TranslatorApi\GoogleTranslate.cs" />
+		<None Include="Structural\Proxy\TranslatorApi\ITranslator.cs" />
+	</ItemGroup>
 </Project>
