@@ -25,13 +25,6 @@
 		<None Include="Creational\Builder\BreadedParmesanRanchChickenBuilder.cs" />
 		<None Include="Creational\Builder\IMealBuilder.cs" />
 		<None Include="Creational\Builder\Meal.cs" />
-		<None Include="Creational\Factory\Example1\BelarusFactory.cs" />
-		<None Include="Creational\Factory\Example1\AzerbaijanFactory.cs" />
-		<None Include="Creational\Factory\Example1\CountryFactory.cs" />
-		<None Include="Creational\Factory\Example1\FactoryClient.cs" />
-		<None Include="Creational\Factory\Example1\Countries\Azerbaijan.cs" />
-		<None Include="Creational\Factory\Example1\Countries\Belarus.cs" />
-		<None Include="Creational\Factory\Example1\Countries\ICountry.cs" />
 		<None Include="Creational\Prototype\ComputerPrototype.cs" />
 		<None Include="Creational\Prototype\Computer.cs" />
 		<None Include="Creational\Prototype\PrototypeClient.cs" />
