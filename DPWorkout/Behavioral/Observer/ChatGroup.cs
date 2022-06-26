@@ -1,4 +1,4 @@
-﻿namespace DPWorkout.Behavioral
+﻿namespace DPWorkout.Behavioral.Observer
 {
     public abstract class ChatGroup
     {

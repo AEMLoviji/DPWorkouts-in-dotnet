@@ -1,4 +1,6 @@
-﻿namespace DPWorkout.Behavioral
+﻿using DPWorkout.Behavioral.Observer;
+
+namespace DPWorkout.Behavioral
 {
     public interface IUser
     {
