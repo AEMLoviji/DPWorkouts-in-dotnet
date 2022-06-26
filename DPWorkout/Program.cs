@@ -11,6 +11,7 @@ using DPWorkout.Structural.Composite;
 using DPWorkout.Structural.Bridge;
 using DPWorkout.Behavioral;
 using DPWorkout.Behavioral.Strategy;
+using DPWorkout.Behavioral.TemplateMethod;
 
 namespace DPWorkout
 {
@@ -35,13 +36,13 @@ namespace DPWorkout
             //patternClient = new DecoratorClient();
             //patternClient = new CompositeClient();
             //patternClient = new FlyweightClient();
-            //patternClient = new BridgeClient();
-       
+            //patternClient = new BridgeClient();       
             #endregion
 
             #region Behavioral Pattern Clients
-            patternClient = new StrategyClient();
+            //patternClient = new StrategyClient();
             //patternClient = new ObserverClient();
+            patternClient = new TemplateMethodClient();
             #endregion
 
             patternClient.Run();
